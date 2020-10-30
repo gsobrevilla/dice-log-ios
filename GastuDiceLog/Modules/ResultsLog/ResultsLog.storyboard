@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Results Log List View Controller-->
+        <scene sceneID="12K-pU-Aqr">
+            <objects>
+                <viewController storyboardIdentifier="ResultsLogListViewController" id="HQo-jY-Dtw" customClass="ResultsLogListViewController" customModule="GastuDiceLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xme-7f-jYp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-SY-jlH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jiJ-FW-F3E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y9E-SY-jlH" firstAttribute="top" secondItem="jiJ-FW-F3E" secondAttribute="top" id="M4y-D6-JVR"/>
+                            <constraint firstItem="jiJ-FW-F3E" firstAttribute="bottom" secondItem="y9E-SY-jlH" secondAttribute="bottom" id="VY1-BW-9Kb"/>
+                            <constraint firstItem="y9E-SY-jlH" firstAttribute="leading" secondItem="jiJ-FW-F3E" secondAttribute="leading" id="Xhi-mA-1dl"/>
+                            <constraint firstItem="jiJ-FW-F3E" firstAttribute="trailing" secondItem="y9E-SY-jlH" secondAttribute="trailing" id="wua-kG-uFQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="y9E-SY-jlH" id="lXy-X0-FEp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4u-LD-8dy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-365" y="100"/>
+        </scene>
+        <!--Results Log Stats View Controller-->
+        <scene sceneID="KJk-6i-hl5">
+            <objects>
+                <viewController storyboardIdentifier="ResultsLogStatsViewController" id="XAv-af-M6U" customClass="ResultsLogStatsViewController" customModule="GastuDiceLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JGx-bW-Gjf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMT-Zx-ptc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F8B-cC-jtb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F8B-cC-jtb" firstAttribute="trailing" secondItem="cMT-Zx-ptc" secondAttribute="trailing" id="BUp-B1-3ev"/>
+                            <constraint firstItem="F8B-cC-jtb" firstAttribute="bottom" secondItem="cMT-Zx-ptc" secondAttribute="bottom" id="Lu5-Ax-1ec"/>
+                            <constraint firstItem="cMT-Zx-ptc" firstAttribute="top" secondItem="F8B-cC-jtb" secondAttribute="top" id="Xid-0F-KXx"/>
+                            <constraint firstItem="cMT-Zx-ptc" firstAttribute="leading" secondItem="F8B-cC-jtb" secondAttribute="leading" id="cpF-3p-Gy7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cMT-Zx-ptc" id="E9c-Kp-Hdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="05l-ky-9wj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
