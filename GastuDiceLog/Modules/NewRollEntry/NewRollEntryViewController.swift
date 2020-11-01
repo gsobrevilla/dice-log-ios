@@ -36,6 +36,11 @@ class NewRollEntryViewController: UIViewController, InstantiableFromStoryboard {
         setupCollectionView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        TutorialHelper.display(message: "", on: self)
+    }
+    
     private func setupCollectionView() {
         collectionView?.register(NewRollEntryCell.self, forCellWithReuseIdentifier: "cell")
         

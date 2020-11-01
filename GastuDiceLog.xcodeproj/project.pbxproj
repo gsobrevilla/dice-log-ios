@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,6 +46,7 @@
 		3DF33F8D254F5C19000745A9 /* DiceRollingResultStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F8C254F5C19000745A9 /* DiceRollingResultStatistics.swift */; };
 		3DF33F91254F68BD000745A9 /* ResultsLogListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F90254F68BD000745A9 /* ResultsLogListHeaderCell.swift */; };
 		3DF33F94254F68C9000745A9 /* ResultsLogListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F93254F68C9000745A9 /* ResultsLogListItemCell.swift */; };
+		3DF33FA9254F72F0000745A9 /* TutorialHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33FA8254F72F0000745A9 /* TutorialHelper.swift */; };
 		A0B5956FB5A119109CD70CFE /* Pods_GastuDiceLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC275E0924E7B78383DD1ABC /* Pods_GastuDiceLog.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		3DF33F8C254F5C19000745A9 /* DiceRollingResultStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollingResultStatistics.swift; sourceTree = "<group>"; };
 		3DF33F90254F68BD000745A9 /* ResultsLogListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogListHeaderCell.swift; sourceTree = "<group>"; };
 		3DF33F93254F68C9000745A9 /* ResultsLogListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogListItemCell.swift; sourceTree = "<group>"; };
+		3DF33FA8254F72F0000745A9 /* TutorialHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialHelper.swift; sourceTree = "<group>"; };
 		6093ECF871A7ED9C1D9DBFC4 /* Pods-GastuDiceLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GastuDiceLog.debug.xcconfig"; path = "Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog.debug.xcconfig"; sourceTree = "<group>"; };
 		DC275E0924E7B78383DD1ABC /* Pods_GastuDiceLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GastuDiceLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,7 +116,6 @@
 				6093ECF871A7ED9C1D9DBFC4 /* Pods-GastuDiceLog.debug.xcconfig */,
 				2A0FDCC985ED32B931D39B40 /* Pods-GastuDiceLog.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -224,6 +225,7 @@
 		3DA8F820254382CB0060A03D /* GastuDiceLog */ = {
 			isa = PBXGroup;
 			children = (
+				3DF33FAC254F74C6000745A9 /* Helpers */,
 				3D23F891254F4F7700EB2169 /* Extensions */,
 				3DB1AA312544FCA2008D43E4 /* Vendor */,
 				3D414259254484DC00E44EF9 /* Utilities */,
@@ -295,6 +297,22 @@
 			path = LogStats;
 			sourceTree = "<group>";
 		};
+		3DF33FA7254F72E6000745A9 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				3DF33FA8254F72F0000745A9 /* TutorialHelper.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		3DF33FAC254F74C6000745A9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DF33FA7254F72E6000745A9 /* Tutorial */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9080CCBFB6BFCABC43F365F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,7 +332,7 @@
 				3DA8F81A254382CB0060A03D /* Sources */,
 				3DA8F81B254382CB0060A03D /* Frameworks */,
 				3DA8F81C254382CB0060A03D /* Resources */,
-				3F7D39C33FA6D4086934DAC9 /* [CP] Embed Pods Frameworks */,
+				346DC1D0A4D33FB04ECD54E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +391,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		346DC1D0A4D33FB04ECD54E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3638D3343124529DF565B444 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,23 +428,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F7D39C33FA6D4086934DAC9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -438,6 +456,7 @@
 				3D4142612544855100E44EF9 /* AppStoryboard.swift in Sources */,
 				3DB1AA5125450DA4008D43E4 /* ResultsLogListPresenter.swift in Sources */,
 				3DF33F91254F68BD000745A9 /* ResultsLogListHeaderCell.swift in Sources */,
+				3DF33FA9254F72F0000745A9 /* TutorialHelper.swift in Sources */,
 				3DB1AA4E25450CCA008D43E4 /* InMemoryResultsLogRepository.swift in Sources */,
 				3DA8F844254386150060A03D /* NewRollEntryCell.swift in Sources */,
 				3DA8F822254382CB0060A03D /* AppDelegate.swift in Sources */,

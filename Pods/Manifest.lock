@@ -1,20 +1,24 @@
 PODS:
-  - QuickLayout (3.0.0)
-  - SwiftEntryKit (1.2.6):
-    - QuickLayout (= 3.0.0)
+  - MarqueeLabel (4.0.5)
+  - NotificationBannerSwift (3.0.0):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - SwiftEntryKit (= 1.2.6)
+  - NotificationBannerSwift (= 3.0.0)
 
 SPEC REPOS:
   https://cdn.cocoapods.org/:
-    - QuickLayout
-    - SwiftEntryKit
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
-  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
-  SwiftEntryKit: 96a2fa90b2631bbbfac50d18449e9ca3d0635f13
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  NotificationBannerSwift: 842401d30f5c36e4f2eafc152824566f6b3c1bb5
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 8194fd954b01b1f90591f00b7bb3b9d73a6b8d5d
+PODFILE CHECKSUM: e658896a750cc08e16e66f1ab02b4f1f67b69fd8
 
 COCOAPODS: 1.10.0

@@ -1,6 +1,6 @@
 target 'GastuDiceLog' do
   use_frameworks!
 
-  pod 'SwiftEntryKit', '1.2.6'
+  pod 'NotificationBannerSwift', '3.0.0'
 
 end
