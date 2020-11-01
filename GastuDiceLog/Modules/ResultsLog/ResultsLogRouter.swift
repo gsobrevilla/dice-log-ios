@@ -9,10 +9,24 @@ import Foundation
 
 class ResultsLogRouter {
     
-    static func instantiateResultsLogListViewController() -> ResultsLogListViewController {
+    private static var resultsLogRepository: ResultsLogRepositoryProtocol {
+        return InMemoryResultsLogRepository()
+    }
+    
+    private static var rollingRepository: DiceRollingRepositoryProtocol {
+        return InMemoryDiceRollingRepository()
+    }
+    
+    static func instantiateListVC() -> ResultsLogListViewController {
         let vc = ResultsLogListViewController.instantiateFromStoryboard()
-        let repository = InMemoryResultsLogRepository()
-        let presenter = ResultsLogListPresenter(view: vc, repository: repository)
+        let presenter = ResultsLogListPresenter(view: vc, repository: resultsLogRepository)
+        vc.presenter = presenter
+        return vc
+    }
+    
+    static func instantiateStatsVC() -> ResultsLogStatsViewController {
+        let vc = ResultsLogStatsViewController.instantiateFromStoryboard()
+        let presenter = ResultsLogStatsPresenter(view: vc, resultsRepository: resultsLogRepository, rollingRepository: rollingRepository)
         vc.presenter = presenter
         return vc
     }

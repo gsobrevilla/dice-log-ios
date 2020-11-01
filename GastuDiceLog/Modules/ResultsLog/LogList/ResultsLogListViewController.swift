@@ -54,6 +54,8 @@ extension ResultsLogListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = items[indexPath.row].text
+        cell.textLabel?.font = .systemFont(ofSize: 20, weight: .medium)
+        cell.textLabel?.textAlignment = .center
         return cell
     }
 }

@@ -12,7 +12,7 @@ class ResultsLogStatsItemCell: UITableViewCell {
     
     private lazy var bar: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.defaultTintColor.withAlphaComponent(0.5)
+        view.backgroundColor = UIColor.defaultTintColor.withAlphaComponent(0.3)
         return view
     }()
     
@@ -32,13 +32,18 @@ class ResultsLogStatsItemCell: UITableViewCell {
         super.layoutSubviews()
         contentView.addSubview(bar)
         contentView.sendSubviewToBack(bar)
+        if let textLabel  = textLabel {
+            textLabel.frame = textLabel.frame.movingRightBy(8)
+        }
+        bar.frame = contentView.bounds
+            .addingPadding(.regular(8))
+            .cuttingLeftBy(12)
+            .multiplyingWidth(by: CGFloat(viewModel?.barLength ?? 0))
     }
     
     private func updateFromViewModel() {
         textLabel?.text = viewModel?.title
         detailTextLabel?.text = viewModel?.value
-        bar.frame = contentView.bounds
-            .addingPadding(.regular(8))
-            .multiplyingWidth(by: CGFloat(viewModel?.barLength ?? 0))
+        setNeedsLayout()
     }
 }

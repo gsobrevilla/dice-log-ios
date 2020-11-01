@@ -34,7 +34,7 @@ class NewRollEntryCell: UICollectionViewCell {
         view.setDuration(speed: CGFloat(checkmarkDuration))
         view.backgroundColor = .white
         view.alpha = 0
-        view.setColor(color: view.tintColor.cgColor)
+        view.setColor(color: UIColor.defaultTintColor.cgColor)
         view.setLineWidth(width: 3)
         return view
     }()

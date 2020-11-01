@@ -18,7 +18,11 @@ protocol ResultsLogRepositoryProtocol {
     
     typealias ResultsCompletion = (_ success: Bool, _ results: [DiceRollingResult]?, _ error: String?) -> Void
     
+    typealias ResultsStatsCompletion = (_ success: Bool, _ results: [DiceRollingResultStatistics]?, _ error: String?) -> Void
+    
     func store(result: DiceRollingResult,completion: @escaping SuccessCompletion)
     
     func getResults(order: ResultsLogOrder, completion: @escaping ResultsCompletion)
+    
+    func getStatistics(compltion: @escaping ResultsStatsCompletion)
 }

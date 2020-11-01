@@ -39,12 +39,12 @@ class MainTabsViewController: UITabBarController {
         vc1.tabBarItem.image = UIImage(systemName: "plus")
         addEntryVC = vc1
         
-        let vc2 = ResultsLogRouter.instantiateResultsLogListViewController()
+        let vc2 = ResultsLogRouter.instantiateListVC()
         vc2.tabBarItem.title = "History"
         vc2.tabBarItem.image = UIImage(systemName: "list.dash")
         logListVC = vc2
         
-        let vc3 = ResultsLogStatsViewController.instantiateFromStoryboard()
+        let vc3 = ResultsLogRouter.instantiateStatsVC()
         vc3.tabBarItem.title = "Stats"
         vc3.tabBarItem.image = UIImage(systemName: "chart.bar.fill")
         logStatsVC = vc3

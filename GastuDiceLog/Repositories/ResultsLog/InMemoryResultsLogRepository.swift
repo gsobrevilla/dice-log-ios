@@ -8,8 +8,8 @@
 import Foundation
 
 class InMemoryResultsLogRepository: ResultsLogRepositoryProtocol {
-    
-    static var results: [DiceRollingResult] = []
+        
+    private static var results: [DiceRollingResult] = []
     
     func store(result: DiceRollingResult, completion: @escaping SuccessCompletion) {
         Self.results.append(result)
@@ -22,5 +22,16 @@ class InMemoryResultsLogRepository: ResultsLogRepositoryProtocol {
             sortedResults.reverse()
         }
         completion(true, sortedResults, nil)
+    }
+    
+    func getStatistics(compltion: @escaping ResultsStatsCompletion) {
+        let resultsValues: [Int] = Self.results.map({ $0.value })
+        let uniqueResultValues = Array(Set(resultsValues))
+        let resultsWithStats = uniqueResultValues.map { (value) -> DiceRollingResultStatistics in
+            let times = resultsValues.filter({ $0 == value }).count
+            let item = DiceRollingResultStatistics(value: value, times: times)
+            return item
+        }
+        compltion(true, resultsWithStats, nil)
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D0886952544795300E00481 /* NewRollEntryOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0886942544795300E00481 /* NewRollEntryOptionViewModel.swift */; };
+		3D23F88F254F4B3300EB2169 /* ResultsLogStatsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23F88E254F4B3300EB2169 /* ResultsLogStatsItemViewModel.swift */; };
+		3D23F893254F4FA200EB2169 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23F892254F4FA200EB2169 /* CGRect.swift */; };
 		3D41424425447D3400E44EF9 /* DiceRollingRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D41424325447D3400E44EF9 /* DiceRollingRepositoryProtocol.swift */; };
 		3D41424725447D4200E44EF9 /* DiceRollingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D41424625447D4200E44EF9 /* DiceRollingResult.swift */; };
 		3D41424D254483EA00E44EF9 /* InMemoryDiceRollingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D41424C254483EA00E44EF9 /* InMemoryDiceRollingRepository.swift */; };
@@ -37,11 +39,19 @@
 		3DB1AA5125450DA4008D43E4 /* ResultsLogListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1AA5025450DA4008D43E4 /* ResultsLogListPresenter.swift */; };
 		3DB1AA5425450DFB008D43E4 /* ResultsLogRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1AA5325450DFB008D43E4 /* ResultsLogRouter.swift */; };
 		3DD5D1D62546567800B945C4 /* ResultsLogStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D1D52546567800B945C4 /* ResultsLogStatsViewController.swift */; };
-		3DD5D1DA2546571500B945C4 /* ResultsLogStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D1D92546571500B945C4 /* ResultsLogStatsCell.swift */; };
+		3DD5D1DA2546571500B945C4 /* ResultsLogStatsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5D1D92546571500B945C4 /* ResultsLogStatsItemCell.swift */; };
+		3DF33F83254F52BE000745A9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F82254F52BE000745A9 /* UIColor.swift */; };
+		3DF33F87254F563E000745A9 /* ResultsLogStatsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F86254F563E000745A9 /* ResultsLogStatsHeaderCell.swift */; };
+		3DF33F8A254F5AA3000745A9 /* ResultsLogStatsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F89254F5AA3000745A9 /* ResultsLogStatsPresenter.swift */; };
+		3DF33F8D254F5C19000745A9 /* DiceRollingResultStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F8C254F5C19000745A9 /* DiceRollingResultStatistics.swift */; };
+		3DF33F91254F68BD000745A9 /* ResultsLogListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F90254F68BD000745A9 /* ResultsLogListHeaderCell.swift */; };
+		3DF33F94254F68C9000745A9 /* ResultsLogListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F93254F68C9000745A9 /* ResultsLogListItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D0886942544795300E00481 /* NewRollEntryOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRollEntryOptionViewModel.swift; sourceTree = "<group>"; };
+		3D23F88E254F4B3300EB2169 /* ResultsLogStatsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogStatsItemViewModel.swift; sourceTree = "<group>"; };
+		3D23F892254F4FA200EB2169 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		3D41424325447D3400E44EF9 /* DiceRollingRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollingRepositoryProtocol.swift; sourceTree = "<group>"; };
 		3D41424625447D4200E44EF9 /* DiceRollingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollingResult.swift; sourceTree = "<group>"; };
 		3D41424C254483EA00E44EF9 /* InMemoryDiceRollingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryDiceRollingRepository.swift; sourceTree = "<group>"; };
@@ -73,7 +83,13 @@
 		3DB1AA5025450DA4008D43E4 /* ResultsLogListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogListPresenter.swift; sourceTree = "<group>"; };
 		3DB1AA5325450DFB008D43E4 /* ResultsLogRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogRouter.swift; sourceTree = "<group>"; };
 		3DD5D1D52546567800B945C4 /* ResultsLogStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogStatsViewController.swift; sourceTree = "<group>"; };
-		3DD5D1D92546571500B945C4 /* ResultsLogStatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogStatsCell.swift; sourceTree = "<group>"; };
+		3DD5D1D92546571500B945C4 /* ResultsLogStatsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogStatsItemCell.swift; sourceTree = "<group>"; };
+		3DF33F82254F52BE000745A9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3DF33F86254F563E000745A9 /* ResultsLogStatsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogStatsHeaderCell.swift; sourceTree = "<group>"; };
+		3DF33F89254F5AA3000745A9 /* ResultsLogStatsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogStatsPresenter.swift; sourceTree = "<group>"; };
+		3DF33F8C254F5C19000745A9 /* DiceRollingResultStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollingResultStatistics.swift; sourceTree = "<group>"; };
+		3DF33F90254F68BD000745A9 /* ResultsLogListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogListHeaderCell.swift; sourceTree = "<group>"; };
+		3DF33F93254F68C9000745A9 /* ResultsLogListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogListItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +126,28 @@
 			path = NewRollEntry;
 			sourceTree = "<group>";
 		};
+		3D23F891254F4F7700EB2169 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D23F896254F4FB400EB2169 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D23F896254F4FB400EB2169 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3D23F892254F4FA200EB2169 /* CGRect.swift */,
+				3DF33F82254F52BE000745A9 /* UIColor.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		3D41424025447CE500E44EF9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				3D41424625447D4200E44EF9 /* DiceRollingResult.swift */,
+				3DF33F8C254F5C19000745A9 /* DiceRollingResultStatistics.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +207,7 @@
 		3DA8F820254382CB0060A03D /* GastuDiceLog */ = {
 			isa = PBXGroup;
 			children = (
+				3D23F891254F4F7700EB2169 /* Extensions */,
 				3DB1AA312544FCA2008D43E4 /* Vendor */,
 				3D414259254484DC00E44EF9 /* Utilities */,
 				3D41424125447CE900E44EF9 /* Repositories */,
@@ -225,6 +260,8 @@
 				3DB1AA3B254504A7008D43E4 /* ResultsLogListViewController.swift */,
 				3DB1AA4525450BB7008D43E4 /* ResultsLogListItemViewModel.swift */,
 				3DB1AA5025450DA4008D43E4 /* ResultsLogListPresenter.swift */,
+				3DF33F90254F68BD000745A9 /* ResultsLogListHeaderCell.swift */,
+				3DF33F93254F68C9000745A9 /* ResultsLogListItemCell.swift */,
 			);
 			path = LogList;
 			sourceTree = "<group>";
@@ -233,7 +270,10 @@
 			isa = PBXGroup;
 			children = (
 				3DD5D1D52546567800B945C4 /* ResultsLogStatsViewController.swift */,
-				3DD5D1D92546571500B945C4 /* ResultsLogStatsCell.swift */,
+				3DD5D1D92546571500B945C4 /* ResultsLogStatsItemCell.swift */,
+				3D23F88E254F4B3300EB2169 /* ResultsLogStatsItemViewModel.swift */,
+				3DF33F86254F563E000745A9 /* ResultsLogStatsHeaderCell.swift */,
+				3DF33F89254F5AA3000745A9 /* ResultsLogStatsPresenter.swift */,
 			);
 			path = LogStats;
 			sourceTree = "<group>";
@@ -314,8 +354,9 @@
 				3DB1AA4625450BB7008D43E4 /* ResultsLogListItemViewModel.swift in Sources */,
 				3D41424725447D4200E44EF9 /* DiceRollingResult.swift in Sources */,
 				3D414268254486CA00E44EF9 /* NewRollEntryModule.swift in Sources */,
+				3DF33F83254F52BE000745A9 /* UIColor.swift in Sources */,
 				3DD5D1D62546567800B945C4 /* ResultsLogStatsViewController.swift in Sources */,
-				3DD5D1DA2546571500B945C4 /* ResultsLogStatsCell.swift in Sources */,
+				3DD5D1DA2546571500B945C4 /* ResultsLogStatsItemCell.swift in Sources */,
 				3D41426F2544884D00E44EF9 /* NewRollEntryPresenter.swift in Sources */,
 				3DB1AA3C254504A7008D43E4 /* ResultsLogListViewController.swift in Sources */,
 				3DB1AA5425450DFB008D43E4 /* ResultsLogRouter.swift in Sources */,
@@ -327,15 +368,22 @@
 				3DA8F83A254383D20060A03D /* MainTabsViewController.swift in Sources */,
 				3D4142612544855100E44EF9 /* AppStoryboard.swift in Sources */,
 				3DB1AA5125450DA4008D43E4 /* ResultsLogListPresenter.swift in Sources */,
+				3DF33F91254F68BD000745A9 /* ResultsLogListHeaderCell.swift in Sources */,
 				3DB1AA4E25450CCA008D43E4 /* InMemoryResultsLogRepository.swift in Sources */,
 				3DA8F844254386150060A03D /* NewRollEntryCell.swift in Sources */,
 				3DA8F822254382CB0060A03D /* AppDelegate.swift in Sources */,
 				3DA8F824254382CB0060A03D /* SceneDelegate.swift in Sources */,
+				3DF33F94254F68C9000745A9 /* ResultsLogListItemCell.swift in Sources */,
+				3DF33F8D254F5C19000745A9 /* DiceRollingResultStatistics.swift in Sources */,
+				3DF33F8A254F5AA3000745A9 /* ResultsLogStatsPresenter.swift in Sources */,
 				3DB1AA332544FCAD008D43E4 /* WVCheckMark.swift in Sources */,
+				3D23F88F254F4B3300EB2169 /* ResultsLogStatsItemViewModel.swift in Sources */,
 				3DA8F840254384D70060A03D /* NewRollEntryViewController.swift in Sources */,
 				3D41425B254484E700E44EF9 /* InstantiableFromStoryboard.swift in Sources */,
+				3DF33F87254F563E000745A9 /* ResultsLogStatsHeaderCell.swift in Sources */,
 				3D41424D254483EA00E44EF9 /* InMemoryDiceRollingRepository.swift in Sources */,
 				3D41424425447D3400E44EF9 /* DiceRollingRepositoryProtocol.swift in Sources */,
+				3D23F893254F4FA200EB2169 /* CGRect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
