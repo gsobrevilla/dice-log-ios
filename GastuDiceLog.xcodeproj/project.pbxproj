@@ -46,9 +46,11 @@
 		3DF33F8D254F5C19000745A9 /* DiceRollingResultStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F8C254F5C19000745A9 /* DiceRollingResultStatistics.swift */; };
 		3DF33F91254F68BD000745A9 /* ResultsLogListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F90254F68BD000745A9 /* ResultsLogListHeaderCell.swift */; };
 		3DF33F94254F68C9000745A9 /* ResultsLogListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF33F93254F68C9000745A9 /* ResultsLogListItemCell.swift */; };
+		A0B5956FB5A119109CD70CFE /* Pods_GastuDiceLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC275E0924E7B78383DD1ABC /* Pods_GastuDiceLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A0FDCC985ED32B931D39B40 /* Pods-GastuDiceLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GastuDiceLog.release.xcconfig"; path = "Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog.release.xcconfig"; sourceTree = "<group>"; };
 		3D0886942544795300E00481 /* NewRollEntryOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRollEntryOptionViewModel.swift; sourceTree = "<group>"; };
 		3D23F88E254F4B3300EB2169 /* ResultsLogStatsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogStatsItemViewModel.swift; sourceTree = "<group>"; };
 		3D23F892254F4FA200EB2169 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 		3DF33F8C254F5C19000745A9 /* DiceRollingResultStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollingResultStatistics.swift; sourceTree = "<group>"; };
 		3DF33F90254F68BD000745A9 /* ResultsLogListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogListHeaderCell.swift; sourceTree = "<group>"; };
 		3DF33F93254F68C9000745A9 /* ResultsLogListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsLogListItemCell.swift; sourceTree = "<group>"; };
+		6093ECF871A7ED9C1D9DBFC4 /* Pods-GastuDiceLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GastuDiceLog.debug.xcconfig"; path = "Target Support Files/Pods-GastuDiceLog/Pods-GastuDiceLog.debug.xcconfig"; sourceTree = "<group>"; };
+		DC275E0924E7B78383DD1ABC /* Pods_GastuDiceLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GastuDiceLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B5956FB5A119109CD70CFE /* Pods_GastuDiceLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2756B15FAC6BAE533D79C492 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6093ECF871A7ED9C1D9DBFC4 /* Pods-GastuDiceLog.debug.xcconfig */,
+				2A0FDCC985ED32B931D39B40 /* Pods-GastuDiceLog.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3D0886912544789100E00481 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +208,8 @@
 			children = (
 				3DA8F820254382CB0060A03D /* GastuDiceLog */,
 				3DA8F81F254382CB0060A03D /* Products */,
+				2756B15FAC6BAE533D79C492 /* Pods */,
+				9080CCBFB6BFCABC43F365F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,6 +295,14 @@
 			path = LogStats;
 			sourceTree = "<group>";
 		};
+		9080CCBFB6BFCABC43F365F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC275E0924E7B78383DD1ABC /* Pods_GastuDiceLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA8F832254382CC0060A03D /* Build configuration list for PBXNativeTarget "GastuDiceLog" */;
 			buildPhases = (
+				3638D3343124529DF565B444 /* [CP] Check Pods Manifest.lock */,
 				3DA8F81A254382CB0060A03D /* Sources */,
 				3DA8F81B254382CB0060A03D /* Frameworks */,
 				3DA8F81C254382CB0060A03D /* Resources */,
@@ -344,6 +370,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3638D3343124529DF565B444 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GastuDiceLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DA8F81A254382CB0060A03D /* Sources */ = {
@@ -527,6 +578,7 @@
 		};
 		3DA8F833254382CC0060A03D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6093ECF871A7ED9C1D9DBFC4 /* Pods-GastuDiceLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +600,7 @@
 		};
 		3DA8F834254382CC0060A03D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0FDCC985ED32B931D39B40 /* Pods-GastuDiceLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
