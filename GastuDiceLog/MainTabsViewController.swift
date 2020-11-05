@@ -18,6 +18,7 @@ class MainTabsViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        setupNavigationBar()
         setupViewControllers()
     }
     
@@ -31,9 +32,18 @@ class MainTabsViewController: UITabBarController {
         
     }
     
+    private func setupNavigationBar() {
+        let button = UIBarButtonItem(title: "Reset data", style: .plain, target: self, action: #selector(resetTapped))
+        navigationItem.rightBarButtonItem = button
+    }
+    
     private func setupViewControllers() {
         
-        // Add Entry
+        let vc0 = UIViewController()
+        vc0.view.backgroundColor = .white
+        vc0.tabBarItem.title = "Roll"
+        vc0.tabBarItem.image = UIImage(systemName: "die.face.6")
+        
         let vc1 = NewRollEntryRouter.instantiateNewRollEntryViewController()
         vc1.tabBarItem.title = "Manual Entry"
         vc1.tabBarItem.image = UIImage(systemName: "plus")
@@ -49,7 +59,12 @@ class MainTabsViewController: UITabBarController {
         vc3.tabBarItem.image = UIImage(systemName: "chart.bar.fill")
         logStatsVC = vc3
         
-        viewControllers = [vc1, vc2, vc3]
+        let vc4 = UIViewController()
+        vc4.view.backgroundColor = .white
+        vc4.tabBarItem.title = "Settings"
+        vc4.tabBarItem.image = UIImage(systemName: "gearshape")
+        
+        viewControllers = [vc0, vc1, vc2, vc3, vc4]
     }
     
     private func updateTitle() {
@@ -62,6 +77,15 @@ class MainTabsViewController: UITabBarController {
         if selectedViewController === logStatsVC {
             title = "Stats"
         }
+    }
+    
+    @objc private func resetTapped() {
+        let alert = UIAlertController(title: "Are you sure you want to reset the data?", message: "This will clear the rolls history and stats", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Reset", style: .destructive, handler: { (_) in
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 
