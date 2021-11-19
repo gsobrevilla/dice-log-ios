@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  GastuDiceLog
@@ -14,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let vc = MainTabsViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.setViewControllers([vc], animated: false)
     }
 }
 
